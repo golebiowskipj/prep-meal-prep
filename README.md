@@ -16,8 +16,11 @@ ___
 ## How to run it
 
 Available scripts:  
- 
-`npm start` - it starts localhost server
+
+`npm start` - it starts localhost server  
+`npm run lint` - shows ESLint and Prettier errors and warnings  
+`npm run lint:fix` - shows ESLint and Prettier errors and warnings and tries to fix them  
+`npm run prettier` - formats all files according to Prettier config  
 
 ## Tech stack
 
