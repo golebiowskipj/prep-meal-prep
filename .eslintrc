@@ -21,6 +21,13 @@
     },
     "env": {
         "browser": true,
-        "node": true
+        "node": true,
+        "jest": true
+    },
+    "globals": {
+        "React": "readonly",
+        "shallow": "readonly",
+        "render": "readonly",
+        "mount": "readonly"
     }
 }

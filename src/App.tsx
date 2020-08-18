@@ -1,7 +1,8 @@
 import React from "react";
+import { Dummy } from "./components/dummy/Dummy";
 
 const App: React.FC = () => {
-    return <>app</>;
+    return <Dummy />;
 };
 
 export default App;
