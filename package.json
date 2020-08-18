@@ -18,7 +18,9 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "test": "react-scripts test",
+        "test": "./node_modules/.bin/jest",
+        "test:watch": "./node_modules/.bin/jest --watchAll",
+        "test:update": "./node_modules/.bin/jest --updateSnapshot",
         "lint": "eslint . --ext .ts,.tsx",
         "lint:fix": "npm run lint --fix",
         "prettier": "prettier --config .prettierrc --write . -ext .ts,.tsx"
@@ -41,7 +43,10 @@
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^3.9.0",
         "@typescript-eslint/parser": "^3.9.0",
-        "eslint": "^7.7.0",
+        "babel-preset-env": "^1.7.0",
+        "enzyme": "^3.11.0",
+        "enzyme-adapter-react-16": "^1.15.3",
+        "enzyme-to-json": "^3.5.0",
         "eslint-config-prettier": "^6.11.0",
         "eslint-plugin-prettier": "^3.1.4",
         "eslint-plugin-react": "^7.20.6",
@@ -49,8 +54,9 @@
         "prettier": "^2.0.5"
     },
     "husky": {
-      "hooks": {
-        "pre-push": "npm run lint"
-      }
+        "hooks": {
+            "pre-commit": "npm run test",
+            "pre-push": "npm run lint"
+        }
     }
 }
