@@ -16,6 +16,7 @@ ___
 ## How to run it
 
 Available scripts:  
+ 
 `npm start` - it starts localhost server
 
 ## Tech stack
