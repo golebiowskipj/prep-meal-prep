@@ -19,11 +19,11 @@ Available scripts:
 
 `npm start` - it starts local server  
 `npm test` - it runs all tests
-`npm test:watch` - it runs all tests and stays in watch mode
-`npm test:update` - it updates snapshot tests
-`npm run lint` - shows ESLint and Prettier errors and warnings  
-`npm run lint:fix` - shows ESLint and Prettier errors and warnings and tries to fix them  
-`npm run prettier` - formats all files according to Prettier config  
+`npm test:watch` - it runs all tests and stays in watch mode  
+`npm test:update` - it updates snapshot tests  
+`npm run lint` - shows ESLint and Prettier errors and warnings    
+`npm run lint:fix` - shows ESLint and Prettier errors and warnings and tries to fix them    
+`npm run prettier` - formats all files according to Prettier config    
 
 ## Tech stack
 
