@@ -1,3 +1,6 @@
 import React from "react";
+import { DummyStyled } from "./styled";
 
-export const Dummy: React.FC = () => <p>I am dummy component new.</p>;
+export const Dummy: React.FC = () => (
+    <DummyStyled>I am Dummy component</DummyStyled>
+);
